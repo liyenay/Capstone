@@ -25,8 +25,6 @@ This addresses the difficulty customers face in navigating a culinary landscape 
 ## Success metrics
 
 - F1-score
-- faithfulness
-- answer-relevancy
 
 ### Notebooks
 
@@ -36,8 +34,9 @@ This addresses the difficulty customers face in navigating a culinary landscape 
 
 [Part III - Modelling](preprocess_model.ipynb)
 
-[Part IV - App data training](../streamlit_deploy/rag_finetuning.ipynb)
+[Part IV - App data training](streamlit/rag_finetuning.ipynb)
 
+To run the [restaurantchat.py](streamlit/restaurantchat.py) app, these [json files](https://drive.google.com/drive/folders/17CKD5UZqIqVPZhp5Vc3fnxN7WTkVoNCt?usp=drive_link) are needed in this [folder](/streamlit/data/index.vecstore).
 
 ## Data
 
