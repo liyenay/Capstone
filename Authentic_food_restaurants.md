@@ -168,13 +168,17 @@ While the reviews provide only a modest insight into restaurants exclusively foc
 
 ## Future work
 
-**1. Real-Time NPS Score Monitoring**
+**1. Cuisine Classification Enhancement**
+
+Enhance the application's analytical depth by incorporating data on the type of cuisines offered by each restaurant, providing a more nuanced understanding of customer preferences and potentially influencing NPS scores.
+
+**2. Experiment with Prompt Engineering**
+
+This entails exploring varied prompt structures, such as explicitly mentioning context or using system messages, to guide the model's behavior. The goal is to enhance contextual understanding, reducing confusion and providing users with a more refined and context-aware conversational experience.
+
+**3. Real-Time NPS Score Monitoring**
 
 Explore the implementation of real-time Net Promoter Score (NPS) monitoring within the application, allowing businesses to proactively track customer satisfaction and make timely adjustments.
-
-**2. Cuisine Classification Enhancement**
-
-Enhance the application's analytical depth by incorporating data on restaurant cuisines, providing a more nuanced understanding of customer preferences and potentially influencing NPS scores.
     
 ## Acknowledgments
 Kishan S. for scraping the TripAdvisor reviews and for the app data training codes.
