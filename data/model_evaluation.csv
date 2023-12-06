@@ -1,0 +1,39 @@
+,resampler,vectorizer,classifier,best_parameters,f1_train,f1_test,recall_train,recall_test,precision_train,precision_test,elapsed_time
+0,SMOTE(random_state=42),"CountVectorizer(ngram_range=(1, 2))",MultinomialNB(),{'classifier__alpha': 1},0.91391,0.87308,0.98271,0.93455,0.85412,0.81921,6.069355010986328
+1,TomekLinks(),"CountVectorizer(max_features=80000, ngram_range=(1, 2))",MultinomialNB(),{'classifier__alpha': 1},0.92618,0.86445,0.91596,0.86528,0.93663,0.86363,34.09889316558838
+2,SMOTE(random_state=42),"TfidfVectorizer(ngram_range=(1, 2))",MultinomialNB(),{'classifier__alpha': 0.01},0.99806,0.84533,0.99652,0.87535,0.99961,0.81731,18.784677982330322
+3,TomekLinks(),"TfidfVectorizer(max_features=10000, ngram_range=(1, 2))",MultinomialNB(),{'classifier__alpha': 0.1},0.8849,0.86269,0.92305,0.89931,0.84977,0.82893,63.02122116088867
+4,SMOTE(random_state=42),"TfidfVectorizer(ngram_range=(1, 2))",LogisticRegression(),"{'classifier__C': 10, 'classifier__max_iter': 100}",0.99898,0.89608,0.99891,0.90573,0.99904,0.88664,148.9228482246399
+5,SMOTE(random_state=42),"TfidfVectorizer(max_features=50000, ngram_range=(1, 2))",LogisticRegression(),"{'classifier__C': 10, 'classifier__max_iter': 150}",0.98602,0.89191,0.98716,0.89965,0.98488,0.8843,45.06173896789551
+6,TomekLinks(),"TfidfVectorizer(ngram_range=(1, 2))",LogisticRegression(),"{'classifier__C': 10, 'classifier__max_iter': 80}",0.99677,0.89953,0.99945,0.93108,0.99409,0.87005,295.16193675994873
+7,TomekLinks(),"TfidfVectorizer(max_features=50000, ngram_range=(1, 2))",LogisticRegression(),"{'classifier__C': 10, 'classifier__max_iter': 80}",0.98596,0.89782,0.99308,0.91528,0.97894,0.88102,119.41587519645691
+8,TomekLinks(),"TfidfVectorizer(ngram_range=(1, 2))",KNeighborsClassifier(),"{'classifier__leaf_size': 20, 'classifier__n_neighbors': 11}",0.85863,0.8345,0.92451,0.89115,0.80152,0.78462,4638.967964887619
+9,TomekLinks(),TfidfVectorizer(),KNeighborsClassifier(),"{'classifier__leaf_size': 10, 'classifier__n_neighbors': 11}",0.86418,0.84067,0.92062,0.89132,0.81426,0.79548,441.84779500961304
+10,TomekLinks(),CountVectorizer(),KNeighborsClassifier(),"{'classifier__leaf_size': 10, 'classifier__n_neighbors': 7}",0.83347,0.78227,0.82521,0.75538,0.8419,0.81115,174.0173921585083
+11,SMOTE(random_state=42),TfidfVectorizer(),"XGBClassifier(base_score=None, booster=None, callbacks=None,
+              colsample_bylevel=None, colsample_bynode=None,
+              colsample_bytree=None, device=None, early_stopping_rounds=None,
+              enable_categorical=False, eval_metric=None, feature_types=None,
+              gamma=None, grow_policy=None, importance_type=None,
+              interaction_constraints=None, learning_rate=None, max_bin=None,
+              max_cat_threshold=None, max_cat_to_onehot=None,
+              max_delta_step=None, max_depth=None, max_leaves=None,
+              min_child_weight=None, missing=nan, monotone_constraints=None,
+              multi_strategy=None, n_estimators=None, n_jobs=None,
+              num_parallel_tree=None, random_state=None, ...)","{'classifier__learning_rate': 0.4, 'classifier__max_depth': 7, 'classifier__n_estimators': 100}",0.94837,0.894,0.95938,0.92031,0.93762,0.86916,942.9539260864258
+12,TomekLinks(),"TfidfVectorizer(ngram_range=(1, 2))",RandomForestClassifier(n_estimators=50),"{'classifier__ccp_alpha': 0.01, 'classifier__min_samples_split': 3}",0.81731,0.82581,1.0,1.0,0.69106,0.7033,5226.773435115814
+13,TomekLinks(),"CountVectorizer(ngram_range=(1, 2))",RandomForestClassifier(n_estimators=50),{'classifier__ccp_alpha': 0.01},0.82385,0.82581,1.0,1.0,0.70047,0.7033,3382.9830129146576
+14,SMOTE(random_state=42),TfidfVectorizer(),KNeighborsClassifier(),"{'classifier__leaf_size': 10, 'classifier__n_neighbors': 7}",0.11518,0.10338,0.06117,0.05469,0.98252,0.94311,892.1646749973297
+15,SMOTE(random_state=42),"CountVectorizer(ngram_range=(1, 2))",RandomForestClassifier(n_estimators=50),{'classifier__ccp_alpha': 0.01},0.76318,0.78897,0.74716,0.75781,0.77989,0.82281,3197.552114009857
+16,SMOTE(random_state=42),"TfidfVectorizer(ngram_range=(1, 2))",RandomForestClassifier(n_estimators=50),"{'classifier__ccp_alpha': 0.01, 'classifier__min_samples_split': 5}",0.72604,0.81488,0.76889,0.81962,0.68771,0.81019,3936.6784031391144
+17,SMOTE(random_state=42),TfidfVectorizer(),"XGBClassifier(base_score=None, booster=None, callbacks=None,
+              colsample_bylevel=None, colsample_bynode=None,
+              colsample_bytree=None, device=None, early_stopping_rounds=None,
+              enable_categorical=False, eval_metric=None, feature_types=None,
+              gamma=None, grow_policy=None, importance_type=None,
+              interaction_constraints=None, learning_rate=None, max_bin=None,
+              max_cat_threshold=None, max_cat_to_onehot=None,
+              max_delta_step=None, max_depth=None, max_leaves=None,
+              min_child_weight=None, missing=nan, monotone_constraints=None,
+              multi_strategy=None, n_estimators=None, n_jobs=None,
+              num_parallel_tree=None, random_state=None, ...)","{'classifier__learning_rate': 0.4, 'classifier__max_depth': 7, 'classifier__n_estimators': 100, 'classifier__subsample': 0.9}",0.94997,0.89454,0.96068,0.92257,0.93949,0.86816,168.4640040397644
